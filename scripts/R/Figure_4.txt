@@ -1,0 +1,25 @@
+#In case you need to install the package
+install.packages("ggplot2")
+
+library(ggplot2)
+
+# Create a data frame with the data
+data <- data.frame(Family = Final_Data_Article$Family, Water_masses = Final_Data_Article$`Water mass`)
+
+# ggplot2 Distribution of cumacean families by water mass
+p <-ggplot(data, aes(x = Water_masses, fill = Family )) +
+  geom_bar() +
+  labs(x = "Water masses",
+       y = "Number of species") +
+  theme_minimal(base_size = 15) +  # Set a base size for text
+  theme(
+    axis.title.x = element_text(size = 18),  # X-axis title size
+    axis.title.y = element_text(size = 18),  # Y-axis title size
+    axis.text.x = element_text(size = 14),   # X-axis labels size
+    axis.text.y = element_text(size = 14),   # Y-axis labels size
+    legend.title = element_text(size = 16),  # Legend title size
+    legend.text = element_text(size = 14)    # Size of legend texts
+  )
+
+# Displaying the distribution
+print(p)
