@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[199]:
+# In[207]:
 
 
 import pandas as pd
@@ -11,7 +11,7 @@ from sklearn.feature_selection import chi2
 from sklearn.preprocessing import LabelEncoder 
 
 
-# In[201]:
+# In[208]:
 
 
 from sklearn import preprocessing
@@ -44,7 +44,7 @@ class MultiColumnLabelEncoderforAbioticDataset:
 
 
 
-# In[202]:
+# In[209]:
 
 
 # change the strings to ints
@@ -59,7 +59,7 @@ input=model.fit_transform(input)
 
 
 
-# In[203]:
+# In[210]:
 
 
 X=input[["Habitat", "Sector", "Water_mass", "Sediment", "Wind start",  "Wind_end"]]
@@ -68,7 +68,7 @@ y_1=input[["Habitat"]]
 y=input[["Lat_end_dec", "Long_start_dec", "Depth_CTD", "Wind_speed_start", "Wind_speed_end", "Temperature_CTD", "O2_concentration_CTD"]]
 
 
-# In[204]:
+# In[212]:
 
 
 from scipy.stats import chi2_contingency
