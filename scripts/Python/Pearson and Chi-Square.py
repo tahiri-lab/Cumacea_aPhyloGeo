@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[207]:
+# In[213]:
 
 
 import pandas as pd
@@ -11,14 +11,14 @@ from sklearn.feature_selection import chi2
 from sklearn.preprocessing import LabelEncoder 
 
 
-# In[208]:
+# In[215]:
 
 
 from sklearn import preprocessing
 model = preprocessing.LabelEncoder()
 
 
-# LabelEncoder for a number of columns
+# LabelEncoder for a number of columns of the abiotic dataset
 class MultiColumnLabelEncoderforAbioticDataset:
 
      def __init__(self, columns = None):
@@ -44,10 +44,10 @@ class MultiColumnLabelEncoderforAbioticDataset:
 
 
 
-# In[209]:
+# In[216]:
 
 
-# change the strings to ints
+# change the strings to int
 input= pd.DataFrame(pd.read_csv("Final_data_Article.csv")) 
 model = MultiColumnLabelEncoderforAbioticDataset()
 input=model.fit_transform(input)
@@ -59,7 +59,7 @@ input=model.fit_transform(input)
 
 
 
-# In[210]:
+# In[217]:
 
 
 X=input[["Habitat", "Sector", "Water_mass", "Sediment", "Wind start",  "Wind_end"]]
@@ -68,20 +68,20 @@ y_1=input[["Habitat"]]
 y=input[["Lat_end_dec", "Long_start_dec", "Depth_CTD", "Wind_speed_start", "Wind_speed_end", "Temperature_CTD", "O2_concentration_CTD"]]
 
 
-# In[212]:
+# In[220]:
 
 
 from scipy.stats import chi2_contingency
 
-def perform_chi_square_test( col1, col2):
+def chi_square_test( col1, col2):
     
     contingency_table = pd.crosstab(col1, col2)
 
-    # Performing the Chi-Square Test
+ 
     chi2, p, dof, expected = chi2_contingency(contingency_table)
 
-    # Interpreting the result
-    significant = p < 0.05  # 5% significance level
+ 
+    significant = p < 0.05 
     return chi2, p, significant
 Habitat=X.iloc[:,0]
 Sector=X.iloc[:,1]
@@ -91,19 +91,19 @@ Wind_start=X.iloc[:,4]
 Wind_end=X.iloc[:,5]
 #O2_concentration_CTD=X.iloc[:,7]
 
-# create list of variable names
+# create list of categorical variable 
 variables = ['Habitat', 'Sector', 'Water_mass', 'Sediment', 'Wind_start',  'Wind_end']
 
-# loop through all possible pairs of variables
+
 for i in range(len(variables)):
     for j in range(i+1,len(variables)):
         # calculate Chi Square correlation coefficient,  p-value and significants
-        chi2, p, significant = perform_chi_square_test(eval(variables[i]), eval(variables[j]))
-        # print result
+        chi2, p, significant = chi_square_test(eval(variables[i]), eval(variables[j]))
+      
         print("Categorical Analysis:Chi Square correlation coefficient,  p-value and significants between", variables[i], "and", variables[j], "are",chi2, p, significant)
 
 
-# In[206]:
+# In[219]:
 
 
 from scipy.stats import pearsonr
