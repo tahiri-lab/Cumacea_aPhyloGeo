@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import pandas as pd
@@ -11,7 +11,7 @@ from sklearn.feature_selection import chi2
 from sklearn.preprocessing import LabelEncoder 
 
 
-# In[2]:
+# In[3]:
 
 
 from sklearn import preprocessing
@@ -46,7 +46,7 @@ class MultiColumnLabelEncoderforAbioticDataset:
 
 
 
-# In[3]:
+# In[4]:
 
 
 # change the strings to ints]
@@ -61,7 +61,7 @@ input=model.transform_abiotic(input)
 
 
 
-# In[4]:
+# In[5]:
 
 
 X_categorical=input[["Habitat", "Sector", "Water_mass", "Sediment", "Wind start",  "Wind_end"]]
@@ -70,7 +70,7 @@ X_categorical=input[["Habitat", "Sector", "Water_mass", "Sediment", "Wind start"
 y_numerical=input[["Lat_end_dec", "Long_start_dec", "Depth_CTD", "Wind_speed_start", "Wind_speed_end", "Temperature_CTD", "O2_concentration_CTD"]]
 
 
-# In[5]:
+# In[6]:
 
 
 from scipy.stats import chi2_contingency
@@ -105,7 +105,7 @@ for n in range(len(features)):
         print("Categorical Analysis:Chi Square correlation coefficient,  p-value and significants between", features[n], "and", features[m], "are",chisquare, p, significant)
 
 
-# In[6]:
+# In[7]:
 
 
 from scipy.stats import pearsonr
@@ -131,6 +131,43 @@ for n in range(len(features)):
         # print result
         print("Numerical Analysis: Pearson correlation coefficient and p-value", features[n], "and", features[m], "is", corr_coef, p_value)
 
+
+
+# In[10]:
+
+
+from scipy.stats import chi2_contingency
+
+def perform_chi_square_test( col1, col2):
+    
+    contingency_table = pd.crosstab(col1, col2)
+
+    # Perform the Chi-Square Test
+    chisquare, p, dof, expected = chi2_contingency(contingency_table)
+
+  
+    significant = p < 0.05  
+    return chisquare, p, significant
+Habitat=X_categorical.iloc[:,0]
+Sector=X_categorical.iloc[:,1]
+Water_mass=X_categorical.iloc[:,2]
+Sediment=X_categorical.iloc[:,3]
+Wind_start=X_categorical.iloc[:,4]
+Wind_end=X_categorical.iloc[:,5]
+#O2_concentration_CTD=X.iloc[:,7]
+
+# create list of different categories
+features== ['Lat_end_dec', 'Long_start_dec', 'Depth_CTD', 'Wind_speed_start', 'Wind_speed_end', 'Temperature_CTD', 'O2_concentration_CTD']
+variables = ['Habitat', 'Sector', 'Water_mass', 'Sediment', 'Wind_start',  'Wind_end']
+
+# run through the pairs of features
+
+for n in range(len(variables)):
+    for m in range(len(features)):
+        # calculate Chi Square correlation coefficient,  p-value and significants
+        chisquare, p, significant = perform_chi_square_test(eval(variables[n]), eval(features[m]))
+        # show the result
+        print("Categorical Analysis:Chi Square correlation coefficient,  p-value and significants between", variables[n], "and", features[m], "are",chisquare, p, significant)
 
 
 # In[ ]:
