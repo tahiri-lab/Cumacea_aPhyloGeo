@@ -1,0 +1,65 @@
+﻿Sampleid;Family;Genus;Scientific_name;Lat_end_dec;Long_start_dec;Wind_speed_start;Temperature_CTD;O2_concentration_CTD
+ICE1-Bod001;Bodotriidae;Cyclaspis;Cyclaspis longicaudata;60,046;-18,136;7;2,6581;258,389
+ICE1-Bod003;Bodotriidae;;;63,018;-28,068;8;4,28;245,53
+ICE1-Bod004;Bodotriidae;Bathycuma;Bathycuma brevirostre;60,046;-18,136;7;2,6581;258,389
+ICE1-Cer002;Ceratocumatidae;Cimmerius;Cimmerius reticulatus;63,018;-28,068;8;4,28;245,53
+ICE1-Cer003;Ceratocumatidae;Cimmerius;Cimmerius reticulatus;63,018;-28,068;8;4,28;245,53
+ICE1-Dia001;Diastylidae;Leptostylis;Leptostylis ampullacea;67,215;-26,207;2;0,07;292,966
+ICE1-Dia004;Diastylidae;Leptostylis;Leptostylis ampullacea;67,215;-26,207;2;0,07;292,966
+ICE1-Dia005;Diastylidae;Leptostylis;Leptostylis ampullacea;67,633;-26,767;6;0,706;290,9
+ICE1-Dia006;Diastylidae;Diastylis;Diastylis polaris;67,639;-12,162;11;-0,8511;276,4161
+ICE1-Dia007;Diastylidae;Leptostylis;Leptostylis ampullacea;67,215;-26,207;2;0,07;292,966
+ICE1-Dia008;Diastylidae;Leptostylis;Leptostylis ampullacea;67,633;-26,767;6;0,706;290,9
+ICE1-Dia009;Diastylidae;Diastylis;Diastylis polaris;67,639;-12,162;11;-0,8511;276,4161
+ICE1-Dia010;Diastylidae;Diastylis;Diastylis polaris;67,860;-23,696;5;-0,66561;278,7728
+ICE1-Dia011;Diastylidae;Diastyloides;Diastyloides atlanticus;60,046;-18,136;7;2,6581;258,389
+ICE1-Dia012;Diastylidae;Leptostylis;;60,046;-18,136;7;2,6581;258,389
+ICE1-Dia013;Diastylidae;Leptostylis;Leptostylis ampullacea;67,860;-23,696;5;-0,66561;278,7728
+ICE1-Dia014;Diastylidae;Leptostylis;Leptostylis ampullacea;67,075;-13,064;6;-0,74403;269,2512
+ICE1-Dia016;Diastylidae;Diastylis;Diastylis polaris;67,860;-23,696;5;-0,66561;278,7728
+ICE1-Dia017;Diastylidae;Leptostylis;Leptostylis borealis;66,293;-12,347;10;-0,40217;283,581
+ICE1-Dia018;Diastylidae;Leptostylis;Leptostylis ampullacea;67,215;-26,207;2;0,07;292,966
+ICE1-Dia019;Diastylidae;Diastylis;Diastylis polaris;67,075;-13,064;6;-0,74403;269,2512
+ICE1-Dia024;Diastylidae;Diastyloides;Diastyloides atlanticus;60,046;-18,136;7;2,6581;258,389
+ICE1-Dia025;Diastylidae;Leptostylis;;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam001;Lampropidae;Hemilamprops;Hemilamprops diversus;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam002;Lampropidae;Hemilamprops;Hemilamprops cristatus;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam004;Pseudocumatidae;Platysympus;Platysympus typicus;67,633;-26,767;6;0,706;290,9
+ICE1-Lam005;Lampropidae;Hemilamprops;Hemilamprops pterini;63,018;-28,068;8;4,28;245,53
+ICE1-Lam008;Lampropidae;Hemilamprops;Hemilamprops cristatus;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam009;Lampropidae;Chalarostylis;Chalarostylis elegans;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam011;Lampropidae;Hemilamprops;Hemilamprops diversus;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam015;Lampropidae;Hemilamprops;;63,018;-28,068;8;4,28;245,53
+ICE1-Lam016;Pseudocumatidae;Platysympus;Platysympus typicus;63,018;-28,068;8;4,28;245,53
+ICE1-Lam017;Lampropidae;Chalarostylis;Chalarostylis elegans;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam018;Lampropidae;Hemilamprops;Hemilamprops cristatus;67,215;-26,207;2;0,07;292,966
+ICE1-Leu002;Leuconidae;Leucon;Leucon pallidus;67,633;-26,767;6;0,706;290,9
+ICE1-Leu003;Leuconidae;Leucon;Leucon pallidus;67,860;-23,696;5;-0,66561;278,7728
+ICE1-Leu006;Leuconidae;Leucon;Leucon pallidus;67,860;-23,696;5;-0,66561;278,7728
+ICE1-Leu007;Leuconidae;Leucon;Leucon profundus;67,633;-26,767;6;0,706;290,9
+ICE1-Leu008;Leuconidae;Leucon;Leucon pallidus;67,633;-26,767;6;0,706;290,9
+ICE1-Leu010;Leuconidae;Leucon;Leucon pallidus;66,293;-12,347;10;-0,40217;283,581
+ICE1-Leu018;Leuconidae;Leucon;Leucon spinulosus;67,215;-26,207;2;0,07;292,966
+ICE1-Leu019;Leuconidae;Leucon;Leucon pallidus;67,215;-26,207;2;0,07;292,966
+ICE1-Nann002;Astacidae;Campylaspis;Campylaspis sulcata;67,633;-26,767;6;0,706;290,9
+ICE1-Nann004;Astacidae;Campylaspis;Campylaspis sulcata;67,633;-26,767;6;0,706;290,9
+ICE1-Nann006;Astacidae;Campylaspis;Campylaspis sulcata;67,633;-26,767;6;0,706;290,9
+ICE1-Nann008;Astacidae;Styloptocuma;Styloptocuma gracillimum;63,018;-28,068;8;4,28;245,53
+ICE1-Nann013;Astacidae;Campylaspis;Campylaspis horrida;61,654;-31,356;4;3,16;254,17
+ICE1-Nann014;Astacidae;Campylaspis;Campylaspis globosa;61,654;-31,356;4;3,16;254,17
+ICE1-Bod002;Bodotriidae;Cyclaspis;Cyclaspis longicaudata;60,046;-18,136;7;2,6581;258,389
+ICE1-Cer001;Ceratocumatidae;Cimmerius;Cimmerius reticulatus;61,654;-31,356;4;3,16;254,17
+ICE1-Dia002;Diastylidae;Leptostylis;Leptostylis ampullacea;67,633;-26,767;6;0,706;290,9
+ICE1-Dia003;Diastylidae;Diastylis;Diastylis polaris;67,639;-12,162;11;-0,8511;276,4161
+ICE1-Dia015;Diastylidae;Leptostylis;Leptostylis borealis;67,633;-26,767;6;0,706;290,9
+ICE1-Lam003;Lampropidae;Hemilamprops;Hemilamprops uniplicatus;67,633;-26,767;6;0,706;290,9
+ICE1-Lam006;Lampropidae;Hemilamprops;Hemilamprops diversus;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam010;Lampropidae;Hemilamprops;Hemilamprops diversus;60,046;-18,136;7;2,6581;258,389
+ICE1-Lam013;Lampropidae;Hemilamprops;Hemilamprops pterini;63,018;-28,068;8;4,28;245,53
+ICE1-Leu001;Leuconidae;Leucon;Leucon profundus;67,633;-26,767;6;0,706;290,9
+ICE1-Leu004;Leuconidae;Leucon;Leucon profundus;67,633;-26,767;6;0,706;290,9
+ICE1-Leu005;Leuconidae;Leucon;Leucon pallidus;67,633;-26,767;6;0,706;290,9
+ICE1-Leu009;Leuconidae;Leucon;Leucon pallidus;67,860;-23,696;5;-0,66561;278,7728
+ICE1-Nann005;Astacidae;Campylaspis;;63,018;-28,068;8;4,28;245,53
+;;;;;;;;
+;;;;;;;;
