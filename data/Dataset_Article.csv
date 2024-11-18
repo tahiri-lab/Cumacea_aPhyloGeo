@@ -1,4 +1,4 @@
-﻿Sampleid;Family;Genus;Scientific_name;Lat_end_dec;Long_start_dec;Wind_speed_start;Temperature_CTD;O2_concentration_CTD
+﻿Field_id;Family;Genus;Scientific_name;Lat_end_dec;Long_start_dec;Wind_speed_start;Temperature_CTD;O2_concentration_CTD
 ICE1-Bod001;Bodotriidae;Cyclaspis;Cyclaspis longicaudata;60.046;-18.136;7;2.6581;258.389
 ICE1-Bod003;Bodotriidae;;;63.018;-28.068;8;4.28;245.53
 ICE1-Bod004;Bodotriidae;Bathycuma;Bathycuma brevirostre;60.046;-18.136;7;2.6581;258.389
